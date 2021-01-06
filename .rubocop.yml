@@ -1,0 +1,18 @@
+AllCops:
+  TargetRubyVersion: 2.7
+  NewCops: enable
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - 'bin/**/*'
+
+Style/Documentation:
+  Enabled: false
+
+Style/GlobalStdStream:
+  Exclude:
+    - 'bin/**/*'
