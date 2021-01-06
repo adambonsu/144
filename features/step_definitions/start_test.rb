@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-Given('the configured Test, {string}, contains the following Questions:') do |name, questions|
-  @game = name
+Given('the configured Test, {string}, contains the following Questions:') do |game, questions|
+  @game = game
   @questions = questions.raw.flatten
   @test = OneFourFour::Test.new(output)
 end
