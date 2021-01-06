@@ -7,4 +7,3 @@ gem 'pry', '0.12.2'
 gem 'rspec', '3.9.0'
 gem 'rspec-wait'
 gem 'rubocop', '0.91.0'
-

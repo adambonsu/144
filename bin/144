@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 $LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 require '144'
 
 test = OneFourFour::Test.new(STDOUT)
-test.start('indigo', ['1x8', '3x1', '7x8'])
-
+test.start('indigo', %w[1x8 3x1 7x8])
