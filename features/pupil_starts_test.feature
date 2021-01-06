@@ -10,5 +10,5 @@ Feature: Pupil Starts Test
       | 3x1 |
       |	7x8 |
     When I start the Test
-    Then I should see "Welcome to 144"
+    Then I should see "Welcome to 144 - Advanced Indigo - 144 +"
     And I should be prompted to provide an answer to the first Question, "1x8:"

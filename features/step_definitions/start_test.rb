@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 Given("the configured Test, {string}, contains the following Questions:") do |name, questions|
-  @test = OneFourFour::Test.new(name, questions.raw.flatten, output)
+  @name = name
+  @questions = questions.raw.flatten
+  @test = OneFourFour::Test.new(output)
 end
 
 When("I start the Test") do
-  test.start
+  test.start(@name, @questions)
 end
 
 Then("I should see {string}") do |message|

@@ -2,14 +2,12 @@
 
 module OneFourFour
   class Test
-    attr_accessor :name, :output, :questions
-    def initialize(name, questions, output)
-      @name = name
+    attr_accessor :output
+    def initialize(output)
       @output = output
-      @questions = questions
     end
-    def start
-      @output.puts 'Welcome to 144'
+    def start(name, questions)
+      @output.puts "Welcome to 144 - #{name}"
       @output.puts "#{questions.first}:"
     end
   end

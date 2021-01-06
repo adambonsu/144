@@ -3,6 +3,6 @@
 $LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 require '144'
 
-test = OneFourFour::Test.new('indigo', ['1x8', '3x1', '7x8'], STDOUT)
-test.start
+test = OneFourFour::Test.new(STDOUT)
+test.start('indigo', ['1x8', '3x1', '7x8'])
 
