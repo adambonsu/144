@@ -6,7 +6,7 @@ module KnowsOneFourFour
   end
 
   def test
-    @test
+    @test ||= OneFourFour::Test.new(output)
   end
 end
 

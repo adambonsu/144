@@ -3,7 +3,6 @@
 Given('the configured Test, {string}, contains the following Questions:') do |game, questions|
   @game = game
   @questions = questions.raw.flatten
-  @test = OneFourFour::Test.new(output)
 end
 
 When('I start the Test') do
