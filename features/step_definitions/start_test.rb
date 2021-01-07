@@ -17,7 +17,7 @@ Then('I should be prompted to provide an answer to the first Question, {string}'
   expect(output.messages).to include(first_question)
 end
 
-Given(/the Question is (\d+[x]\d+)/) do |question|
+Given(/the Question is (\d+x\d+)/) do |question|
   test.start(game, [question])
 end
 
@@ -28,4 +28,3 @@ end
 Then('my answer is marked as {word}') do |mark|
   expect(output.messages).to include mark
 end
-

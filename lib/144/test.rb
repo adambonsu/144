@@ -17,7 +17,7 @@ module OneFourFour
     end
 
     def clean(question)
-      question.gsub('x','*')
+      question.gsub('x', '*')
     end
 
     def mark(question, answer)
