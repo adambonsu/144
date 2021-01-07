@@ -6,7 +6,7 @@ Given('the configured Test, {string}, contains the following Questions:') do |ga
 end
 
 When('I start the Test') do
-  test.start(@game, @questions)
+  test.start(game, @questions)
 end
 
 Then('I should see {string}') do |message|
@@ -17,18 +17,15 @@ Then('I should be prompted to provide an answer to the first Question, {string}'
   expect(output.messages).to include(first_question)
 end
 
-Given('the Question is {int}x{int}') do |_int, _int2|
-  pending # Write code here that turns the phrase above into concrete actions
+Given(/the Question is (\d+[x]\d+)/) do |question|
+  test.start(game, [question])
 end
 
-When('I answer {int}') do |_int|
-  pending # Write code here that turns the phrase above into concrete actions
+When('I answer {int}') do |answer|
+  test.provide answer
 end
 
-Then('my answer is marked as CORRECT') do
-  pending # Write code here that turns the phrase above into concrete actions
+Then('my answer is marked as {word}') do |mark|
+  expect(output.messages).to include mark
 end
 
-Then('my answer is marked as INCORRECT') do
-  pending # Write code here that turns the phrase above into concrete actions
-end
