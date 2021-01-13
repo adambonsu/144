@@ -2,10 +2,11 @@
 
 module OneFourFour
   class Test
-    attr_accessor :output, :questions, :pointer
+    attr_reader :marker, :output, :questions
 
     def initialize(output)
       @output = output
+      @marker = Marker.new
     end
 
     def start(name, questions)
@@ -15,21 +16,13 @@ module OneFourFour
     end
 
     def provide(answer, question = 0)
-      @output.puts mark(@questions[question], answer)
+      @output.puts @marker.mark(@questions[question], answer)
     end
 
     private
 
     def ask_first_question
       @output.puts "#{@questions.first}:"
-    end
-
-    def clean(question)
-      question.gsub('x', '*')
-    end
-
-    def mark(question, answer)
-      instance_eval(clean(question)) == answer ? 'CORRECT' : 'INCORRECT'
     end
 
     def welcome_message(name)
