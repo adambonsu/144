@@ -10,7 +10,6 @@ module OneFourFour
 
     def start(name, questions)
       @questions = questions
-      @pointer = 0
 
       @output.puts "Welcome to 144 - #{name}"
       @output.puts "#{questions.first}:"
@@ -24,8 +23,8 @@ module OneFourFour
       eval(clean(question)) == answer ? 'CORRECT' : 'INCORRECT'
     end
 
-    def provide(answer)
-      @output.puts mark(@questions[@pointer], answer)
+    def provide(answer, question = 0)
+      @output.puts mark(@questions[question], answer)
     end
   end
 end
