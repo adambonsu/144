@@ -1,6 +1,6 @@
 refactor Test
-    Temporary variable: use Enumerator instead of @questions[@pointer]?
     #start: welcome_message(), ask_question()
+exploratory testing: instance_eval, like eval execute any code? Security risk?
 
 Example Questions: Advanced Indigo
 1x8		3x1		7x8		11x9		0x11		10x4		8x1		4x11		5x9		6x12		1x7		11x6		0x8

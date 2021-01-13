@@ -20,7 +20,7 @@ module OneFourFour
     end
 
     def mark(question, answer)
-      eval(clean(question)) == answer ? 'CORRECT' : 'INCORRECT'
+      instance_eval(clean(question)) == answer ? 'CORRECT' : 'INCORRECT'
     end
 
     def provide(answer, question = 0)
