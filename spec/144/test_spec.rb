@@ -20,19 +20,10 @@ module OneFourFour
       end
     end
     describe '#provide' do
-      context 'correct answer' do
-        it 'marks answer as CORRECT' do
-          test.start(game, questions)
-          expect(output).to receive(:puts).with('CORRECT')
-          test.provide 25
-        end
-      end
-      context 'incorrect answer' do
-        it 'marks answer as INCORRECT' do
-          test.start(game, questions)
-          expect(output).to receive(:puts).with('INCORRECT')
-          test.provide 99
-        end
+      it 'sends mark to answer to output' do
+        test.start(game, questions)
+        expect(output).to receive(:puts).with('CORRECT')
+        test.provide 25
       end
     end
   end
