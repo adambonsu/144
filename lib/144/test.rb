@@ -10,9 +10,18 @@ module OneFourFour
 
     def start(name, questions)
       @questions = questions
+      welcome_message(name)
+      ask_first_question
+    end
 
-      @output.puts "Welcome to 144 - #{name}"
-      @output.puts "#{questions.first}:"
+    def provide(answer, question = 0)
+      @output.puts mark(@questions[question], answer)
+    end
+
+    private
+
+    def ask_first_question
+      @output.puts "#{@questions.first}:"
     end
 
     def clean(question)
@@ -23,8 +32,8 @@ module OneFourFour
       instance_eval(clean(question)) == answer ? 'CORRECT' : 'INCORRECT'
     end
 
-    def provide(answer, question = 0)
-      @output.puts mark(@questions[question], answer)
+    def welcome_message(name)
+      @output.puts "Welcome to 144 - #{name}"
     end
   end
 end

@@ -1,5 +1,3 @@
-refactor Test
-    #start: welcome_message(), ask_question()
 exploratory testing: instance_eval, like eval execute any code? Security risk?
 
 Example Questions: Advanced Indigo
