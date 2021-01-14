@@ -9,5 +9,6 @@ test.start('indigo', %w[1x8 3x1 7x8])
 test.questions.each_with_index do |_question, index|
   answer = gets.chomp
   test.provide answer.to_i, index
-  STDOUT.puts test.questions[index + 1] unless test.questions[index] == test.questions.last
+  STDOUT.puts
+  STDOUT.print "#{test.questions[index + 1]}: " unless test.questions[index] == test.questions.last
 end

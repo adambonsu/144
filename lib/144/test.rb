@@ -16,13 +16,13 @@ module OneFourFour
     end
 
     def provide(answer, question = 0)
-      @output.puts @marker.mark(@questions[question], answer)
+      @output.print @marker.mark(@questions[question], answer)
     end
 
     private
 
     def ask_first_question
-      @output.puts "#{@questions.first}:"
+      @output.print "#{@questions.first}:"
     end
 
     def welcome_message(name)

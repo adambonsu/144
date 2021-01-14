@@ -15,14 +15,14 @@ module OneFourFour
         test.start(game, questions)
       end
       it 'provides the first question, prompting for an answer' do
-        expect(output).to receive(:puts).with("#{questions.first}:")
+        expect(output).to receive(:print).with("#{questions.first}:")
         test.start(game, questions)
       end
     end
     describe '#provide' do
       it 'sends mark to answer to output' do
         test.start(game, questions)
-        expect(output).to receive(:puts).with('CORRECT')
+        expect(output).to receive(:print).with('CORRECT')
         test.provide 25
       end
     end

@@ -6,8 +6,13 @@ module OneFourFour
       @messages ||= []
     end
 
-    def puts(message)
+    def print(message)
       messages << message
+    end
+
+    def puts(message)
+      print(message)
+      print('\n')
     end
   end
 end
