@@ -25,7 +25,7 @@ Example Questions: Advanced Indigo
     type shell command to start it up
     provide answers to questions
     see mark for answers
-    see overall result: pass/fail
+    see test result: pass/fail
 
 2
     No more answers after 5 minute deadline
