@@ -15,6 +15,6 @@ test.questions.each_with_index do |_question, index|
   STDOUT.puts
   STDOUT.print "#{test.questions[index + 1]}: " unless test.questions[index] == test.questions.last
 end
-STDOUT.print "Result: "
-STDOUT.print "#{test.result}"
+STDOUT.print 'Result: '
+STDOUT.print test.result.to_s
 STDOUT.puts
