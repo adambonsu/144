@@ -20,10 +20,37 @@ module OneFourFour
       end
     end
     describe '#provide' do
-      it 'sends mark to answer to output' do
+      it "sends mark for answer to output" do
         test.start(game, questions)
         expect(output).to receive(:print).with('CORRECT')
         test.provide 25
+      end
+    end
+    describe '#result' do
+      context 'all questions not answered yet' do
+        it 'sends FAIL to output' do
+          test.start(game, questions)
+          expect(output).to receive(:print).with('FAIL')
+          test.result
+        end
+      end
+      context 'all questions answered' do
+        context 'all answers ae correct' do
+          it 'sends PASS to output' do
+            test.start(game, questions)
+            test.provide 25
+            expect(output).to receive(:print).with('PASS')
+            test.result
+          end
+        end
+        context 'one or more questions incorrect'do
+          it 'sends FAIL to output' do
+            test.start(game, questions)
+            test.provide 99
+            expect(output).to receive(:print).with('FAIL')
+            test.result
+          end
+        end
       end
     end
   end

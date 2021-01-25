@@ -7,6 +7,7 @@ module OneFourFour
     def initialize(output)
       @output = output
       @marker = Marker.new
+      @marks = []
     end
 
     def start(name, questions)
@@ -16,7 +17,12 @@ module OneFourFour
     end
 
     def provide(answer, question = 0)
-      @output.print @marker.mark(@questions[question], answer)
+      @marks << @marker.mark(@questions[question], answer)
+      @output.print @marks.last
+    end
+
+    def result
+      @output.print @marks.map.select{|mark| mark == 'CORRECT'}.size == @questions.size ? 'PASS' : 'FAIL'
     end
 
     private
