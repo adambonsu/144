@@ -20,7 +20,7 @@ module OneFourFour
       end
     end
     describe '#provide' do
-      it "sends mark for answer to output" do
+      it 'sends mark for answer to output' do
         test.start(game, questions)
         expect(output).to receive(:print).with('CORRECT')
         test.provide 25
@@ -43,7 +43,7 @@ module OneFourFour
             test.result
           end
         end
-        context 'one or more questions incorrect'do
+        context 'one or more questions incorrect' do
           it 'sends FAIL to output' do
             test.start(game, questions)
             test.provide 99

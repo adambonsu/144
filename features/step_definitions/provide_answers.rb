@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 def provide_test(answers, expected_marks)
-  test.questions.each_with_index do|question, index|
+  test.questions.each_with_index do |_question, index|
     test.provide answers[index], index
-    expect(output.messages.last).to eq(expected_marks[index]), "Question[#{question}], Answer[#{answers[index]}], Expected Mark[#{expected_marks[index]}], Actual Mark[#{output.messages.last}]"
+    expect(output.messages.last).to eq(expected_marks[index])
   end
 end
 
@@ -20,6 +20,5 @@ end
 
 When('my Test Result will be {word}') do |result|
   test.result
-  expect(output.messages).to include  result
+  expect(output.messages).to include result
 end
-

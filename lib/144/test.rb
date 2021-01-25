@@ -22,7 +22,7 @@ module OneFourFour
     end
 
     def result
-      @output.print @marks.map.select{|mark| mark == 'CORRECT'}.size == @questions.size ? 'PASS' : 'FAIL'
+      @output.print @marks.map.select { |mark| mark == 'CORRECT' }.size == @questions.size ? 'PASS' : 'FAIL'
     end
 
     private
