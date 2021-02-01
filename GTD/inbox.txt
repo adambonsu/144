@@ -27,8 +27,10 @@ Example Questions: Advanced Indigo
     provide answers to questions
     see mark for answers
     see test result: pass/fail
+    randomise questions
 
 2
+    Record actual answers provided
     No more answers after 5 minute deadline
 
 3
