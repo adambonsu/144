@@ -8,11 +8,12 @@ module OneFourFour
       @output = output
       @marker = Marker.new
       @results = Result.new
+      @welcome = Welcome.new(@output)
     end
 
     def start(name, questions)
       @questions = questions
-      welcome_message(name)
+      @welcome.message(name)
       ask_first_question
     end
 
@@ -29,10 +30,6 @@ module OneFourFour
 
     def ask_first_question
       @output.print "#{@questions.first}:"
-    end
-
-    def welcome_message(name)
-      @output.puts "Welcome to 144 - #{name}"
     end
   end
 end
