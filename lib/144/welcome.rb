@@ -6,8 +6,8 @@ module OneFourFour
       @output = output
     end
 
-    def message(test_name)
-      @output.puts "Welcome to 144 - #{test_name}"
+    def message(text)
+      @output.puts text
     end
   end
 end

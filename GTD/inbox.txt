@@ -1,3 +1,4 @@
+spec for welcome and result
 exploratory testing: instance_eval, like eval execute any code? Security risk?
 
 Example Questions: Advanced Indigo

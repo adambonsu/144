@@ -13,7 +13,7 @@ module OneFourFour
 
     def start(name, questions)
       @questions = questions
-      @welcome.message(name)
+      @welcome.message("Welcome to 144 - #{name}")
       ask_first_question
     end
 
