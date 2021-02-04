@@ -12,6 +12,12 @@ module OneFourFour
       @marks << mark
     end
 
+    def correct
+      @marks.map.select { |mark| mark == 'CORRECT' }
+    end
+
+    private
+
     def respond_to_missing?(name, include_all: false)
       @marks.respond_to?(name) || super
     end
@@ -21,8 +27,5 @@ module OneFourFour
       @marks.send(name, *args)
     end
 
-    def correct
-      @marks.map.select { |mark| mark == 'CORRECT' }
-    end
   end
 end
