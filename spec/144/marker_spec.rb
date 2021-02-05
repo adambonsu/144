@@ -8,7 +8,7 @@ module OneFourFour
     let(:marker) { Marker.new }
 
     describe '#clean' do
-      it 'replaces x with *' do
+      it "replaces 'x' with '*'" do
         expect(marker.clean(question)).to eq '5*5'
       end
     end
