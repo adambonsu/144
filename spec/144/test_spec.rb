@@ -35,7 +35,7 @@ module OneFourFour
         end
       end
       context 'all questions answered' do
-        context 'all answers ae correct' do
+        context 'all answers are correct' do
           it 'sends PASS to output' do
             test.start(game, questions)
             test.provide 25
