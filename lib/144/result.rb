@@ -26,6 +26,5 @@ module OneFourFour
       super unless @marks.respond_to? name
       @marks.send(name, *args)
     end
-
   end
 end

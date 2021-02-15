@@ -23,8 +23,9 @@ Example Questions: Advanced Indigo
 # Releases
 1
     type shell command to start it up
+    provide list of questions
     provide answers to questions
-    see mark for answers
+    feedback mark for answers
     see test result: pass/fail
     randomise questions
 

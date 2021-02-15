@@ -23,15 +23,14 @@ module OneFourFour
     describe '#correct' do
       context 'No marks added yet' do
         it 'is empty' do
-          expect(result.correct.empty?).to be(true)
+          expect(result.correct).to be_empty
         end
       end
       context 'Marks added' do
         context 'All marks are INCORRECT' do
           it 'is empty' do
             result << 'INCORRECT'
-            expect(result.correct.empty?).to be(true)
-            expect(result.correct.size).to eq 0
+            expect(result.correct).to be_empty
           end
         end
         context 'One mark is CORRECT' do
