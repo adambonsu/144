@@ -17,12 +17,16 @@ rescue StandardError
   nil
 end
 
+def randomise(questions)
+  questions.shuffle
+end
+
 def questions
   load_tests_from_csv_file('bin/tests/Advanced Indigo.txt', "\t\t")
 end
 
 test = OneFourFour::Test.new(STDOUT)
-test.start('indigo', questions)
+test.start('indigo', randomise(questions))
 test.questions.each_with_index do |_question, index|
   test.provide clean(answer), index
   STDOUT.puts
