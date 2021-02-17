@@ -1,3 +1,2 @@
 # 144
-You provide the math problems
-It will test you and mark your results
+You provide the math problems. It marks your answers and provides the results
