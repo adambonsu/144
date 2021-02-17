@@ -1,0 +1,28 @@
+# Releases
+1
+    type shell command to start it up
+    provide list of questions
+    provide answers to questions
+    feedback mark for answers
+    see test result: pass/fail
+    randomise questions
+
+2
+    Record actual answers provided
+    No more answers after 5 minute deadline
+    Indicate how many more to do
+    Encouraging message if you fail “try again next time"
+    Indicate time left
+    Incorrect answer provided, display correct answer
+
+3
+    Log how long it takes to answer a question
+    Log incorrect answers
+    Provide User Name
+    User History
+        Questions you're having difficulty with and/or taking longer to answer
+        Time taken to provide all answers
+        Improvements
+
+4
+    Accessible via the browser

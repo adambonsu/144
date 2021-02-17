@@ -1,0 +1,26 @@
+# Stories
+* Pupil starts test
+    Pupil opens a shell, types 144, and sees a question with a prompt to enter their first answer
+* Pupil submits answer
+    Pupil submits an answer. System responds by marking the answer
+* Pupil Passes Test
+    Pupil answers all of the questions provided correctly
+    A message congratulating the Pupil with the amount of time it took to provide all answers
+* Pupil Fails Test
+    Pupil answers one or more questions incorrectly
+    A commiserations message is displayed, listing the questions with incorrect answers provided along with the correct answers
+* Pupil Requests Hint
+    System provides correct answer with suggestions on how to remember
+* Pupil reviews their performance
+    List Incorrect Answers
+        Order answers by length of time taken to provide an answer
+    List Correct Answers
+        Order answers by length of time taken to provide an answer
+* Parent reviews Pupil's performance
+    List Incorrect Answers
+        Order answers by length of time taken to provide an answer
+    List Correct Answers
+        Order answers by length of time taken to provide an answer
+* Parent request training on particular Questions
+    Provide list of Questions for Pupil to practice
+    Pupil can select this list of Questions
