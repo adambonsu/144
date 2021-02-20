@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 module OneFourFour
   describe Welcome do
     let(:output) { double('output').as_null_object }

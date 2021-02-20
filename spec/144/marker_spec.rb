@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 module OneFourFour
   describe Marker do
     let(:question) { '5x5' }

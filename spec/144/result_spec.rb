@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 module OneFourFour
   describe Result do
     let(:result) { Result.new }
